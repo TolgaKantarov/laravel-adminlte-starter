@@ -124,13 +124,13 @@
 
     <li class="nav-item dropdown user-menu show">
       <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-        <img src="https://adminlte.io/themes/v3/dist/img/user2-160x160.jpg" class="user-image img-circle elevation-2" alt="User Image">
+        <img src="{{ auth()->user()->getUserAvatar() }}" class="user-image img-circle elevation-2" alt="User Image">
         <span class="d-none d-md-inline">{{ auth()->user()->name }}</span>
       </a>
       <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="left: inherit; right: 0px;">
         <!-- User image -->
         <li class="user-header bg-primary">
-          <img src="https://adminlte.io/themes/v3/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="{{ auth()->user()->getUserAvatar() }}" class="img-circle elevation-2" alt="User Image">
 
           <p>
             {{ auth()->user()->name }}
